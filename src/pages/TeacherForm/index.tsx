@@ -7,6 +7,9 @@ import Input from '../../components/Input';
 //css
 import './styles.css';
 
+//icons
+import warningIcon from '../../assets/images/icons/warning.svg'
+
 function TeacherForm(){
     return(
         <div id="page-teacher-form" className="container">
@@ -30,6 +33,17 @@ function TeacherForm(){
                     <Input name="subject" type="text" label="Matéria" />
                     <Input name="cost" type="text" label="Cursto da sua hora por aula" />
                 </fieldset>
+
+                <footer>
+                    <p>
+                        <img src={warningIcon} alt="Aviso importante"/>
+                        Importante! <br />
+                        Preencha todos os dados
+                    </p>
+                    <button type="button">
+                        Salvar Cadastro
+                    </button>
+                </footer>
             </main>
         </div>
     );
